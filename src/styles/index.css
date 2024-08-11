@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+body {
+  @apply leading-[normal] m-0;
+  font-family: "Cairo", "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c5c5c5;
+  border-radius: 7px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.rtl {
+  direction: rtl !important;
+}
+
+.ltr {
+  direction: ltr !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: #f5f5f8 !important;
+  background-clip: text;
+}
+
+.no-scroll-track::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+
+.no-scroll-track::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.transparent-scroll-track::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+button:focus-visible {
+  outline: none;
+}
