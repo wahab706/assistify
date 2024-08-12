@@ -26,7 +26,7 @@ export default function Example() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-10">
+        <div className="hidden lg:flex lg:gap-x-12">
           <Link to="#" className="text-base leading-[20.16px]">
             Our Solution
           </Link>
@@ -37,7 +37,7 @@ export default function Example() {
             Company
           </Link>
         </div>
-        <div className="hidden lg:flex lg:justify-end ms-7.5">
+        <div className="hidden lg:flex lg:justify-end ms-12">
           <Button primary>Contact us</Button>
         </div>
       </nav>

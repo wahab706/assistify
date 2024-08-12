@@ -32,10 +32,11 @@ export function Button(props) {
         disabled={disabled}
         onClick={onClick}
         className={classNames(
-          "w-full min-w-[163px] min-h-10 flex justify-center items-center gap-2.5 py-2 px-2.5 text-white text-base leading-[20.16px] rounded-[130px] border focus:outline-none",
+          "w-full min-w-[163px] min-h-10 flex justify-center items-center gap-2.5 py-2 px-2.5 text-base leading-[20.16px] rounded-[130px] border focus:outline-none",
           disabled && "opacity-50 hover:!bg-primary",
-          primary && "bg-primary hover:bg-primary-hover border-transparent",
-          outlined && "bg-secondary hover:bg-primary border-transparent",
+          primary &&
+            "bg-primary hover:bg-primary-hover border-transparent text-white",
+          outlined && "button-gradient-border text-gradient",
           className
         )}
       >

@@ -8,6 +8,7 @@ export default {
       colors: {
         secondary: "#FBC75E",
         "gray-light": "#AAAAAA",
+        "gray-medium": "#ADADAD",
       },
       backgroundImage: {
         primary: "linear-gradient(100.07deg, #70A22C 18.13%, #47B995 107.16%)",

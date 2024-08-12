@@ -83,3 +83,40 @@ input:-webkit-autofill:active {
 button:focus-visible {
   outline: none;
 }
+.button-gradient-border {
+  background-color: #fff;
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-gradient-border::after {
+  content: "";
+  position: absolute;
+  height: 108%;
+  width: 102%;
+  border-radius: 9999px;
+  background: linear-gradient(100.07deg, #70a22c 18.13%, #47b995 107.16%);
+  z-index: -1;
+}
+.mobile-pic::after {
+  content: url(../assets/img/banner-illustration.svg);
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card-border::before {
+  content: "";
+  display: block;
+  border-top: 1px solid #87c446;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  z-index: -1;
+  border-style: dotted;
+}

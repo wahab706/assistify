@@ -6,11 +6,11 @@ export function Layout() {
   return (
     <div
       className="flex flex-col font-Sora py-[60px]
-      px-4 lg:px-8"
+      px-4 lg:px-[34px]"
     >
       <div className="min-h-screen w-full">
         <Header />
-        <main className="flex-grow">
+        <main className="flex-grow py-[97px]">
           <Outlet />
         </main>
       </div>
