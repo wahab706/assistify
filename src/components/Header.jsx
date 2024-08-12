@@ -1,58 +1,19 @@
 import { useState } from "react";
 import logo from "../assets/img/logo.svg";
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from "@headlessui/react";
+import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import {
-  ChevronDownIcon,
-} from "@heroicons/react/20/solid";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
-
-const features = [
-  {
-    name: "Analytics",
-    href: "#",
-  },
-  {
-    name: "Engagement",
-    href: "#",
-  },
-  {
-    name: "Security",
-    href: "#",
-  },
-  {
-    name: "Integrations",
-    href: "#",
-  },
-  {
-    name: "Automations",
-    href: "#",
-  },
-];
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white border border-b-[#D1EEE6] px-3">
-      <nav
-        aria-label="Global"
-        className="mx-auto flex max-w-[1216px] items-center justify-between py-5"
-      >
+    <header className="bg-white px-10 py-5 rounded-[50px] max-w-[1370PX] mx-auto">
+      <nav aria-label="Global" className="flex items-center justify-between">
         <div className="flex lg:flex-grow">
           <Link to="#">
-            <img alt="" src={logo} className="h-7.5 w-auto" />
+            <img alt="" src={logo} />
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -65,36 +26,17 @@ export default function Example() {
             <Bars3Icon aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-10">
-          <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-base font-medium leading-normal">
-              Features
-              <ChevronDownIcon
-                aria-hidden="true"
-                className="h-5 w-5 flex-none"
-              />
-            </PopoverButton>
-
-            {/* <PopoverPanel
-              transition
-              className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-44 overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5 transition data-[closed]:translate-y-1 data-[closed]:opacity-0 data-[enter]:duration-200 data-[leave]:duration-150 data-[enter]:ease-out data-[leave]:ease-in"
-            >
-              <div className="p-4 flex flex-col gap-4">
-                {features.map((item) => (
-                  <Link to={item.href} className="text-sm font-medium">
-                    {item.name}
-                  </Link>
-                ))}
-              </div>
-            </PopoverPanel> */}
-          </Popover>
-          <Link to="#" className="text-base font-medium leading-normal">
-            Services
+        <div className="hidden lg:flex lg:gap-x-10">
+          <Link to="#" className="text-base leading-[20.16px]">
+            Our Solution
           </Link>
-          <Link to="#" className="text-base font-medium leading-normal">
-            About Us
+          <Link to="#" className="text-base leading-[20.16px]">
+            Use Cases
           </Link>
-        </PopoverGroup>
+          <Link to="#" className="text-base leading-[20.16px]">
+            Company
+          </Link>
+        </div>
         <div className="hidden lg:flex lg:justify-end ms-7.5">
           <Button primary>Contact us</Button>
         </div>
@@ -109,11 +51,7 @@ export default function Example() {
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img
-                alt="logo"
-                src={logo}
-                className="h-7.5 w-auto"
-              />
+              <img alt="logo" src={logo} />
             </a>
             <button
               type="button"
@@ -127,38 +65,23 @@ export default function Example() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">
-                    Features
-                    <ChevronDownIcon
-                      aria-hidden="true"
-                      className="h-5 w-5 flex-none group-data-[open]:rotate-180"
-                    />
-                  </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
-                    {features.map((item) => (
-                      <DisclosureButton
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                      >
-                        {item.name}
-                      </DisclosureButton>
-                    ))}
-                  </DisclosurePanel>
-                </Disclosure>
                 <Link
                   to="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="block rounded-lg px-3 py-2 text-base text-[#000] hover:bg-gray-50"
                 >
-                  Services
+                  Our Solution
                 </Link>
                 <Link
                   to="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  className="block rounded-lg px-3 py-2 text-base text-[#000] hover:bg-gray-50"
                 >
-                  About Us
+                  Use Cases
+                </Link>
+                <Link
+                  to="#"
+                  className="block rounded-lg px-3 py-2 text-base text-[#000] hover:bg-gray-50"
+                >
+                  Company
                 </Link>
               </div>
               <div className="py-6">

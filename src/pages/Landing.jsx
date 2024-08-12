@@ -3,7 +3,7 @@ import React, { Fragment } from "react";
 export const Landing = () => {
   return (
     <Fragment>
-      <h1 className="text-3xl font-semibold text-center"> Landing page</h1>
+      <div className="max-w-[1370px] mx-auto"></div>
     </Fragment>
   );
 };
