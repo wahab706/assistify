@@ -97,14 +97,6 @@ button:focus-visible {
   background: linear-gradient(100.07deg, #70a22c 18.13%, #47b995 107.16%);
   z-index: -1;
 }
-.mobile-pic::after {
-  content: url(../assets/img/banner-illustration.svg);
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .card-border::before {
   content: "";
   display: block;
