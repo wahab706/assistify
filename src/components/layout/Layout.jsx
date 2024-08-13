@@ -5,7 +5,7 @@ import Footer from "../Footer";
 export function Layout() {
   return (
     <div
-      className="flex flex-col font-Sora py-[60px]
+      className="flex flex-col font-Cairo py-[60px]
       px-4 lg:px-[34px]"
     >
       <div className="min-h-screen w-full">

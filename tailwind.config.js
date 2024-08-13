@@ -21,6 +21,7 @@ export default {
         7.5: "30px",
         8.5: "34px",
         9.5: "38px",
+        10.5: "42px",
       },
       fontSize: {
         10: "10px",
@@ -29,7 +30,7 @@ export default {
         "7.5xl": "64px",
       },
       fontFamily: {
-        Sora: "Sora",
+        Cairo: "Cairo",
       },
       borderRadius: {
         14: "14px",
