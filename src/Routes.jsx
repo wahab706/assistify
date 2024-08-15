@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes as AppRoutes, Route } from "react-router-dom";
+import { Routes as AppRoutes, Route, Navigate } from "react-router-dom";
 import { Landing } from "./pages/Landing";
 import { Layout } from "./components/layout/Layout";
 
@@ -8,6 +8,7 @@ function Routes() {
     <AppRoutes>
       <Route element={<Layout />}>
         <Route path="/" element={<Landing />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Route>
     </AppRoutes>
   );

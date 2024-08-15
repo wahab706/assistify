@@ -1,10 +1,11 @@
-import React, { Fragment } from "react";
-import { Button } from "../components/Button";
-import bannerIllustration from "../assets/img/banner-illustration.png";
-import bannerImg from "../assets/img/bannerImg.png";
-import googleplay from "../assets/img/googleplay.png";
-import appstore from "../assets/img/appstore.png";
-export default function Banner() {
+import React from "react";
+import { Button } from "../../components";
+import bannerIllustration from "../../assets/img/banner-illustration.png";
+import bannerImg from "../../assets/img/bannerImg.png";
+import googleplay from "../../assets/img/googleplay.png";
+import appstore from "../../assets/img/appstore.png";
+
+export function LandingBanner() {
   return (
     <div className="relative">
       <div className="grid grid-cols-1 lg:grid-cols-12 max-w-[1120px] mx-auto mb-24 md:mb-[195px] gap-20 lg:gap-0">

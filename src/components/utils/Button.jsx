@@ -1,9 +1,5 @@
 import React from "react";
-
-// Utility function to join class names conditionally
-export function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import { classNames } from "./const";
 
 export function Button(props) {
   const {

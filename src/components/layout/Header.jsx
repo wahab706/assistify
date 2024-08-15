@@ -1,9 +1,24 @@
 import { useState } from "react";
-import logo from "../assets/img/logo.svg";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
+import { Button } from "../../components";
+import logo from "../../assets/img/logo.svg";
+
+const navigationMenu = [
+  {
+    path: "#",
+    name: "Our Solution",
+  },
+  {
+    path: "#",
+    name: "Use Cases",
+  },
+  {
+    path: "#",
+    name: "Company",
+  },
+];
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,15 +42,15 @@ export default function Example() {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          <Link to="#" className="text-base leading-[20.16px]">
-            Our Solution
-          </Link>
-          <Link to="#" className="text-base leading-[20.16px]">
-            Use Cases
-          </Link>
-          <Link to="#" className="text-base leading-[20.16px]">
-            Company
-          </Link>
+          {navigationMenu?.map((nav, index) => (
+            <Link
+              key={index}
+              to={nav.path}
+              className="text-base leading-[20.16px] hover:underline"
+            >
+              {nav.name}
+            </Link>
+          ))}
         </div>
         <div className="hidden lg:flex lg:justify-end ms-12">
           <Button primary>Contact us</Button>

@@ -1,7 +1,8 @@
 import React from "react";
-import phone from "../assets/img/phone.png";
-import googleplay from "../assets/img/googleplay.png";
-import appstore from "../assets/img/appstore.png";
+import phone from "../../assets/img/phone.png";
+import googleplay from "../../assets/img/googleplay.png";
+import appstore from "../../assets/img/appstore.png";
+
 export const GetAssistify = () => {
   return (
     <div className="max-w-[1120px] mx-auto bg-white py-7.5 px-5 border border-[#EDEDED] rounded-[20px]">
@@ -11,7 +12,7 @@ export const GetAssistify = () => {
             <h3 className="text-3xl lg:text-5xl font-semibold lg:leading-[90px]">
               Get Assistify now
             </h3>
-            <p className="text-xl text-[#6E6E6E]">
+            <p className="font-light text-xl text-[#6E6E6E]">
               Get your questions answered, on your phone now.
             </p>
           </div>

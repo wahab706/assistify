@@ -1,7 +1,8 @@
 import React from "react";
-import leadsClientsIllust from "../assets/img/leads-clients-illust.svg";
-import GroupMobile from "../assets/img/GroupMobile.png";
-import smGroupMobile from "../assets/img/smGroupMobile.png";
+import leadsClientsIllust from "../../assets/img/leads-clients-illust.svg";
+import GroupMobile from "../../assets/img/GroupMobile.png";
+import smGroupMobile from "../../assets/img/smGroupMobile.png";
+
 export const AdvancedNavigation = () => {
   return (
     <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-40 md:mb-[313px]">
@@ -15,7 +16,7 @@ export const AdvancedNavigation = () => {
             <h3 className="text-black font-semibold text-xl lg:text-[32px] lg:leading-[50.78px]">
               Real-Time Navigation Insights
             </h3>
-            <p className="text-lg lg:text-xl lg:leading-[31.74px] text-[#5E5E5E]">
+            <p className="font-light text-lg lg:text-xl lg:leading-[31.74px] text-[#5E5E5E]">
               Get detailed navigation information with ETA, distance, and
               directional guidance at a glance
             </p>
@@ -24,7 +25,7 @@ export const AdvancedNavigation = () => {
             <h3 className="text-black font-semibold text-xl lg:text-[32px] lg:leading-[50.78px]">
               Enable GPS and Camera
             </h3>
-            <p className="text-lg lg:text-xl lg:leading-[31.74px] text-[#5E5E5E]">
+            <p className="font-light text-lg lg:text-xl lg:leading-[31.74px] text-[#5E5E5E]">
               Ensure GPS and camera access for accurate positioning and enhanced
               navigation features
             </p>
@@ -33,7 +34,7 @@ export const AdvancedNavigation = () => {
             <h3 className="text-black font-semibold text-xl lg:text-[32px] lg:leading-[50.78px]">
               Interactive AR Route Guidance
             </h3>
-            <p className="text-lg lg:text-xl lg:leading-[31.74px] text-[#5E5E5E]">
+            <p className="font-light text-lg lg:text-xl lg:leading-[31.74px] text-[#5E5E5E]">
               Experience route guidance with AR: visualize your path through
               your camera or switch to map view
             </p>
@@ -56,13 +57,13 @@ export const AdvancedNavigation = () => {
             </div>
             <div className="col-span-5 md:col-span-3 flex flex-col gap-8 md:gap-[96px] lg:gap-12 xl:gap-[96px] items-end">
               <div className="bg-white text-xl border border-[#87C446] border-dotted p-5 flex justify-center items-center w-full h-full max-w-[183px] max-h-[171px] rounded-[20px] text-center card-border relative">
-                See navigation details
+                Switch places
               </div>
               <div className="bg-white text-xl border border-[#87C446] border-dotted p-5 flex justify-center items-center w-full h-full max-w-[183px] max-h-[171px] rounded-[20px] text-center card-border relative">
                 Keep your phone’s camera/GPS on
               </div>
               <div className="bg-white text-xl border border-[#87C446] border-dotted p-5 flex justify-center items-center w-full h-full max-w-[183px] max-h-[171px] rounded-[20px] text-center card-border relative">
-                Follow route path
+                See navigation details
               </div>
             </div>
           </div>

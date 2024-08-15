@@ -1,10 +1,10 @@
 import React from "react";
-import teenyiconsSchool from "../assets/img/teenyiconsSchool.png";
-import arena from "../assets/img/arena.png";
-import bank from "../assets/img/bank.png";
-import hospital from "../assets/img/hospital.png";
-import solarShop from "../assets/img/solarShop.png";
-import airplane from "../assets/img/airplane.png";
+import teenyiconsSchool from "../../assets/img/teenyiconsSchool.png";
+import arena from "../../assets/img/arena.png";
+import bank from "../../assets/img/bank.png";
+import hospital from "../../assets/img/hospital.png";
+import solarShop from "../../assets/img/solarShop.png";
+import airplane from "../../assets/img/airplane.png";
 
 export const AssistifyActivities = () => {
   return (

@@ -1,7 +1,9 @@
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import logo from "../assets/img/logo.svg";
-import footerIllustration from "../assets/img/footer-illustration.svg";
+
+import logo from "../../assets/img/logo.svg";
+import footerIllustration from "../../assets/img/footer-illustration.svg";
+
 export default function Footer() {
   return (
     <footer>

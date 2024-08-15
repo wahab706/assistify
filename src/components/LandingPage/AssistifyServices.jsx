@@ -1,11 +1,11 @@
-import navigation from "../assets/img/navigation.svg";
-import mapping from "../assets/img/mapping.svg";
-import tracking from "../assets/img/tracking.svg";
-import safety from "../assets/img/safety.svg";
-import locationInfo from "../assets/img/locationInfo.svg";
-import translation from "../assets/img/translation.svg";
-import cardIllustrationTop from "../assets/img/card-illustration-top.svg";
-import cardIllustrationBottom from "../assets/img/card-illustration-botm.svg";
+import navigation from "../../assets/img/navigation.svg";
+import mapping from "../../assets/img/mapping.svg";
+import tracking from "../../assets/img/tracking.svg";
+import safety from "../../assets/img/safety.svg";
+import locationInfo from "../../assets/img/locationInfo.svg";
+import translation from "../../assets/img/translation.svg";
+import cardIllustrationTop from "../../assets/img/card-illustration-top.svg";
+import cardIllustrationBottom from "../../assets/img/card-illustration-botm.svg";
 
 export const AssistifyServices = () => {
   return (
@@ -19,7 +19,7 @@ export const AssistifyServices = () => {
           <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
             Indoor navigation
           </h3>
-          <p className="text-lg lg:text-xl lg:leading-[25.4px]">
+          <p className="font-light text-lg lg:text-xl lg:leading-[25.4px]">
             Transform your building into interactive digital floor maps with
             effective search and guiding tools to help visitors find their way
             indoors
@@ -35,7 +35,7 @@ export const AssistifyServices = () => {
           <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
             Plan your trip
           </h3>
-          <p className="text-lg lg:text-xl lg:leading-[25.4px]">
+          <p className="font-light text-lg lg:text-xl lg:leading-[25.4px]">
             Create interactive 2D and 3D digital indoor floor maps for your
             building, define points of interest, and connect them with the right
             routes.
@@ -51,7 +51,7 @@ export const AssistifyServices = () => {
           <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
             Talk to your AI
           </h3>
-          <p className="text-lg lg:text-xl lg:leading-[25.4px]">
+          <p className="font-light text-lg lg:text-xl lg:leading-[25.4px]">
             Track assets and staff real time and manage your resources
             efficiently. You can monitor, set alerts, and response to incidents
           </p>
@@ -66,7 +66,7 @@ export const AssistifyServices = () => {
           <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
             Safety & help
           </h3>
-          <p className="text-lg lg:text-xl lg:leading-[25.4px]">
+          <p className="font-light text-lg lg:text-xl lg:leading-[25.4px]">
             Track assets and staff real time and manage your resources
             efficiently. You can monitor, set alerts, and response to incidents
           </p>
@@ -81,7 +81,7 @@ export const AssistifyServices = () => {
           <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
             Location info
           </h3>
-          <p className="text-lg lg:text-xl lg:leading-[25.4px]">
+          <p className="font-light text-lg lg:text-xl lg:leading-[25.4px]">
             Use your camera to scan public landmarks to more insights or just
             request an instant location and see your location details
           </p>
@@ -91,7 +91,7 @@ export const AssistifyServices = () => {
           <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
             Easy Translation
           </h3>
-          <p className="text-lg lg:text-xl lg:leading-[25.4px]">
+          <p className="font-light text-lg lg:text-xl lg:leading-[25.4px]">
             Dont get lost in translation again, Easy translation for uploading
             documents, street boards/signs recognition, text prompts or even
             voice
