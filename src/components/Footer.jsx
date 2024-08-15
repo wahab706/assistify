@@ -5,7 +5,7 @@ import footerIllustration from "../assets/img/footer-illustration.svg";
 export default function Footer() {
   return (
     <footer>
-      <div className="mx-auto max-w-[1370px] rounded-[30px] pt-[50px] pb-5 bg-white ps-[60px] pr-6 flex flex-col gap-14 relative">
+      <div className="mx-auto max-w-[1370px] rounded-[30px] pt-[50px] pb-5 bg-white px-6 lg:ps-[60px] lg:pr-6 flex flex-col gap-14 relative">
         <div className="flex flex-wrap items-center gap-10 px-2.5">
           <img className="h-[39px]" src={logo} alt="logo" />
           <span className="text-gray-light">Pathing the future</span>
@@ -52,11 +52,14 @@ export default function Footer() {
             </Link>
           </li>
         </ul>
-        <div className="flex flex-col items-center gap-4.5 mt-6">
-          <p className="text-lg text-gray-light leading-[20.16px]">
-            Copyright HRSANAD 2024
+        <div className="flex flex-col items-center gap-4.5 mt-6 text-center">
+          <p className="text-gray-light leading-[30px]">
+            2024 © Assistify. All Rights Reserved.
           </p>
-          <div className="flex justify-between items-center gap-3 max-w-[182px]">
+          <p className="text-gray-light md:leading-[10px]">
+            6683 Irqah,RIYADH 12541 - 3902, SAUDI ARABIA
+          </p>
+          <div className="flex justify-between items-center gap-16 max-w-[182px]">
             <Link to="">
               <FaFacebook className="w-4.5 h-4.5 text-gray-light" />
             </Link>
