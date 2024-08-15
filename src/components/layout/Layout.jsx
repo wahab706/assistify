@@ -10,7 +10,7 @@ export function Layout() {
     >
       <div className="min-h-screen w-full">
         <Header />
-        <main className="flex-grow py-[110px]">
+        <main className="flex-grow py-12 md:py-[110px]">
           <Outlet />
         </main>
       </div>

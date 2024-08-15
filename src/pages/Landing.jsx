@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import { Button } from "../components/Button";
 import bannerIllustration from "../assets/img/banner-illustration.png";
+import LandingBg from "../assets/img/LandingBg.png";
 import bannerImg from "../assets/img/bannerImg.png";
 import navigation from "../assets/img/navigation.svg";
 import mapping from "../assets/img/mapping.svg";
@@ -12,6 +13,7 @@ import cardIllustrationTop from "../assets/img/card-illustration-top.svg";
 import cardIllustrationBottom from "../assets/img/card-illustration-botm.svg";
 import leadsClientsIllust from "../assets/img/leads-clients-illust.svg";
 import GroupMobile from "../assets/img/GroupMobile.png";
+import smGroupMobile from "../assets/img/smGroupMobile.png";
 import phone from "../assets/img/phone.png";
 import googleplay from "../assets/img/googleplay.png";
 import appstore from "../assets/img/appstore.png";
@@ -32,18 +34,19 @@ import companionAnytime from "../assets/img/companionAnytime.png";
 import arLandmark from "../assets/img/arLandmark.png";
 import dotGrid from "../assets/img/dotGrid.svg";
 import safetyPhone from "../assets/img/safetyPhone.png";
-
+import travelExpHillustration from "../assets/img/travelExp-hillustration.svg";
+import travelExpIllustration from "../assets/img/travelExp-illustration.svg";
 export const Landing = () => {
   return (
     <Fragment>
       <div className="max-w-[1370px] mx-auto">
         <div className="relative">
-          <div className="grid grid-cols-1 lg:grid-cols-12 max-w-[1120px] mx-auto mb-[195px] gap-20 lg:gap-0">
+          <div className="grid grid-cols-1 lg:grid-cols-12 max-w-[1120px] mx-auto mb-24 md:mb-[195px] gap-20 lg:gap-0">
             <div className="order-2 lg:order-1 flex flex-col gap-6 lg:col-span-6">
-              <h3 className="text-[#000] font-semibold text-[64px] leading-[70px]">
+              <h3 className="text-[#000] font-semibold text-3xl lg:text-[64px] lg:leading-[70px]">
                 Explore Saudi Arabia with Ease – Your Ultimate Travel Companion
               </h3>
-              <h4 className="text-[#000] font-semibold text-2xl">
+              <h4 className="text-[#000] font-semibold text-xl lg:text-2xl">
                 Guides, AI Insights, Emergency Services, and Indoor Navigation –
                 All in One App
               </h4>
@@ -64,35 +67,40 @@ export const Landing = () => {
               </Button>
             </div>
             <div className="order-1 lg:order-2 lg:col-span-6 flex justify-center items-center">
-              <div className="absolute -z-10 xl:-top-[91px] xl:right-[70px]">
+              <div className="absolute -z-10 xl:-top-[87px] xl:right-[30px]">
                 <img src={bannerIllustration} alt="bannerIllustration" />
               </div>
               <img src={bannerImg} alt="bannerImg" width={499} />
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-[195px]">
-          <h2 className="font-semibold text-5xl leading-[60.48px]">
+        <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-24 md:mb-[195px]">
+          <h2 className="font-semibold text-3xl lg:text-5xl lg:leading-[60.48px]">
             Assistify can help you with
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[50px]">
             <div className="bg-white border border-[#CDCDCD] p-5 rounded-3xl flex flex-col items-center gap-4">
               <img src={navigation} alt="navigation" className="mb-2" />
-              <h3 className="w-full text-start text-black font-semibold text-[32px] leading-[40.32px]">
+              <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
                 Indoor navigation
               </h3>
-              <p className="text-xl leading-[25.4px]">
+              <p className="text-lg lg:text-xl lg:leading-[25.4px]">
                 Transform your building into interactive digital floor maps with
                 effective search and guiding tools to help visitors find their
                 way indoors
               </p>
             </div>
-            <div className="bg-white border border-[#CDCDCD] p-5 rounded-3xl flex flex-col items-center gap-4">
+            <div className="bg-white border border-[#CDCDCD] p-5 rounded-3xl flex flex-col items-center gap-4 relative">
               <img src={mapping} alt="mapping" className="mb-2" />
-              <h3 className="w-full text-start text-black font-semibold text-[32px] leading-[40.32px]">
+              <img
+                src={cardIllustrationTop}
+                alt="cardIllustrationTop"
+                className="hidden md:block lg:hidden absolute bottom-[81%] right-3 -z-10"
+              />
+              <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
                 Plan your trip
               </h3>
-              <p className="text-xl leading-[25.4px]">
+              <p className="text-lg lg:text-xl lg:leading-[25.4px]">
                 Create interactive 2D and 3D digital indoor floor maps for your
                 building, define points of interest, and connect them with the
                 right routes.
@@ -103,12 +111,12 @@ export const Landing = () => {
               <img
                 src={cardIllustrationTop}
                 alt="cardIllustrationTop"
-                className="absolute bottom-[81%] right-3 -z-10"
+                className="hidden lg:block absolute bottom-[81%] right-3 -z-10"
               />
-              <h3 className="w-full text-start text-black font-semibold text-[32px] leading-[40.32px]">
+              <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
                 Talk to your AI
               </h3>
-              <p className="text-xl leading-[25.4px]">
+              <p className="text-lg lg:text-xl lg:leading-[25.4px]">
                 Track assets and staff real time and manage your resources
                 efficiently. You can monitor, set alerts, and response to
                 incidents
@@ -119,33 +127,38 @@ export const Landing = () => {
               <img
                 src={cardIllustrationBottom}
                 alt="cardIllustrationBottom"
-                className="absolute top-[50%] -left-12 -z-10"
+                className="hidden lg:block absolute top-[50%] -left-12 -z-10"
               />
-              <h3 className="w-full text-start text-black font-semibold text-[32px] leading-[40.32px]">
+              <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
                 Safety & help
               </h3>
-              <p className="text-xl leading-[25.4px]">
+              <p className="text-lg lg:text-xl lg:leading-[25.4px]">
                 Track assets and staff real time and manage your resources
                 efficiently. You can monitor, set alerts, and response to
                 incidents
               </p>
             </div>
-            <div className="bg-white border border-[#CDCDCD] p-5 rounded-3xl flex flex-col items-center gap-4">
+            <div className="bg-white border border-[#CDCDCD] p-5 rounded-3xl flex flex-col items-center gap-4 relative">
               <img src={locationInfo} alt="locationInfo" className="mb-2" />
-              <h3 className="w-full text-start text-black font-semibold text-[32px] leading-[40.32px]">
+              <img
+                src={cardIllustrationBottom}
+                alt="cardIllustrationBottom"
+                className="hidden md:block lg:hidden absolute top-[60%] left-0 -z-10"
+              />
+              <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
                 Location info
               </h3>
-              <p className="text-xl leading-[25.4px]">
+              <p className="text-lg lg:text-xl lg:leading-[25.4px]">
                 Use your camera to scan public landmarks to more insights or
                 just request an instant location and see your location details
               </p>
             </div>
             <div className="bg-white border border-[#CDCDCD] p-5 rounded-3xl flex flex-col items-center gap-4">
               <img src={translation} alt="translation" />
-              <h3 className="w-full text-start text-black font-semibold text-[32px] leading-[40.32px]">
+              <h3 className="w-full text-start text-black font-semibold text-xl lg:text-[32px] lg:leading-[40.32px]">
                 Easy Translation
               </h3>
-              <p className="text-xl leading-[25.4px]">
+              <p className="text-lg lg:text-xl lg:leading-[25.4px]">
                 Dont get lost in translation again, Easy translation for
                 uploading documents, street boards/signs recognition, text
                 prompts or even voice
@@ -153,43 +166,48 @@ export const Landing = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-[313px]">
-          <h2 className="font-semibold text-5xl leading-[90px]">
+        <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-40 md:mb-[313px]">
+          <h2 className="font-semibold text-3xl lg:text-5xl lg:leading-[90px]">
             Navigate large indoor spaces effortlessly with our advanced indoor
             navigation system{" "}
           </h2>
-          <div className="grid grid-cols-12 lg:gap-5 xl:gap-[50px]">
-            <div className="col-span-12 lg:col-span-3 xl:col-span-4 flex flex-col gap-20 lg:gap-10 xl:gap-[95.25px]">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 lg:gap-3 xl:gap-[20px]">
+            <div className="order-2 lg:order-1 lg:col-span-3 xl:col-span-4 flex flex-col gap-20 lg:gap-10 xl:gap-[95.25px]">
               <div className="flex flex-col gap-4">
-                <h3 className="text-black font-semibold text-[32px] leading-[50.78px]">
+                <h3 className="text-black font-semibold text-xl lg:text-[32px] lg:leading-[50.78px]">
                   Real-Time Navigation Insights
                 </h3>
-                <p className="text-xl leading-[31.74px] text-[#5E5E5E]">
+                <p className="text-lg lg:text-xl lg:leading-[31.74px] text-[#5E5E5E]">
                   Get detailed navigation information with ETA, distance, and
                   directional guidance at a glance
                 </p>
               </div>
               <div className="flex flex-col gap-4">
-                <h3 className="text-black font-semibold text-[32px] leading-[50.78px]">
+                <h3 className="text-black font-semibold text-xl lg:text-[32px] lg:leading-[50.78px]">
                   Enable GPS and Camera
                 </h3>
-                <p className="text-xl leading-[31.74px] text-[#5E5E5E]">
+                <p className="text-lg lg:text-xl lg:leading-[31.74px] text-[#5E5E5E]">
                   Ensure GPS and camera access for accurate positioning and
                   enhanced navigation features
                 </p>
               </div>
               <div className="flex flex-col gap-4">
-                <h3 className="text-black font-semibold text-[32px] leading-[50.78px]">
+                <h3 className="text-black font-semibold text-xl lg:text-[32px] lg:leading-[50.78px]">
                   Interactive AR Route Guidance
                 </h3>
-                <p className="text-xl leading-[31.74px] text-[#5E5E5E]">
+                <p className="text-lg lg:text-xl lg:leading-[31.74px] text-[#5E5E5E]">
                   Experience route guidance with AR: visualize your path through
                   your camera or switch to map view
                 </p>
               </div>
             </div>
-            <div className="col-span-12 lg:col-span-9 xl:col-span-8 pt-20 lg:mt-0">
-              <div className="grid grid-cols-12 lg:gap-5 xl:gap-[50px]">
+            <div className="order-1 lg:order-2 lg:col-span-9 xl:col-span-8 pt-20 lg:mt-0">
+              <img
+                src={smGroupMobile}
+                alt="smGroupMobile"
+                className="lg:hidden mx-auto"
+              />
+              <div className="lg:grid lg:grid-cols-12 lg:gap-5 xl:gap-[50px] hidden">
                 <div className="col-span-7 md:col-span-9 relative">
                   <img src={GroupMobile} alt="GroupMobile" />
                   <img
@@ -199,13 +217,13 @@ export const Landing = () => {
                   />
                 </div>
                 <div className="col-span-5 md:col-span-3 flex flex-col gap-8 md:gap-[96px] lg:gap-12 xl:gap-[96px] items-end">
-                  <div className="text-xl border border-[#87C446] border-dotted p-5 flex justify-center items-center w-[183px] h-[171px] rounded-[20px] text-center card-border relative">
+                  <div className="text-xl border border-[#87C446] border-dotted p-5 flex justify-center items-center w-full h-full max-w-[183px] max-h-[171px] rounded-[20px] text-center card-border relative">
                     See navigation details
                   </div>
-                  <div className="text-xl border border-[#87C446] border-dotted p-5 flex justify-center items-center w-[183px] h-[171px] rounded-[20px] text-center card-border relative">
+                  <div className="text-xl border border-[#87C446] border-dotted p-5 flex justify-center items-center w-full h-full max-w-[183px] max-h-[171px] rounded-[20px] text-center card-border relative">
                     Keep your phone’s camera/GPS on
                   </div>
-                  <div className="text-xl border border-[#87C446] border-dotted p-5 flex justify-center items-center w-[183px] h-[171px] rounded-[20px] text-center card-border relative">
+                  <div className="text-xl border border-[#87C446] border-dotted p-5 flex justify-center items-center w-full h-full max-w-[183px] max-h-[171px] rounded-[20px] text-center card-border relative">
                     Follow route path
                   </div>
                 </div>
@@ -213,13 +231,13 @@ export const Landing = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-[313px]">
-          <h2 className="font-semibold text-5xl leading-[60.48px]">
+        <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-40 md:mb-[313px]">
+          <h2 className="font-semibold text-3xl lg:text-5xl lg:leading-[60.48px]">
             Assistify will help you with many activities
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
-            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex gap-10 items-center">
-              <div className="min-w-[190px] min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
+            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex flex-col md:flex-row gap-10 items-center">
+              <div className="md:min-w-[190px] md:min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
                 <img src={airplane} alt="teenyiconsSchool" />
               </div>
               <div className="flex flex-col gap-[15px]">
@@ -233,8 +251,8 @@ export const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex gap-10 items-center">
-              <div className="min-w-[190px] min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
+            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex flex-col md:flex-row gap-10 items-center">
+              <div className="md:min-w-[190px] md:min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
                 <img src={solarShop} alt="teenyiconsSchool" />
               </div>
               <div className="flex flex-col gap-[15px]">
@@ -248,8 +266,8 @@ export const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex gap-10 items-center">
-              <div className="min-w-[190px] min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
+            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex flex-col md:flex-row gap-10 items-center">
+              <div className="md:min-w-[190px] md:min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
                 <img src={hospital} alt="teenyiconsSchool" />
               </div>
               <div className="flex flex-col gap-[15px]">
@@ -263,8 +281,8 @@ export const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex gap-10 items-center">
-              <div className="min-w-[190px] min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
+            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex flex-col md:flex-row gap-10 items-center">
+              <div className="md:min-w-[190px] md:min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
                 <img src={bank} alt="teenyiconsSchool" />
               </div>
               <div className="flex flex-col gap-[15px]">
@@ -278,8 +296,8 @@ export const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex gap-10 items-center">
-              <div className="min-w-[190px] min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
+            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex flex-col md:flex-row gap-10 items-center">
+              <div className="md:min-w-[190px] md:min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
                 <img src={arena} alt="teenyiconsSchool" />
               </div>
               <div className="flex flex-col gap-[15px]">
@@ -293,8 +311,8 @@ export const Landing = () => {
                 </p>
               </div>
             </div>
-            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex gap-10 items-center">
-              <div className="min-w-[190px] min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
+            <div className="bg-white border border-[#EDEDED] rounded-[24px] p-[15px] flex flex-col md:flex-row gap-10 items-center">
+              <div className="md:min-w-[190px] md:min-h-[206px] flex justify-center items-center border border-[#EDEDED] rounded-[25px]">
                 <img src={teenyiconsSchool} alt="teenyiconsSchool" />
               </div>
               <div className="flex flex-col gap-[15px]">
@@ -310,111 +328,123 @@ export const Landing = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-[313px]">
-          <h2 className="font-semibold text-5xl leading-[60.48px]">
-            Assistify can guide you in every way possible, regardless of your
-            travel experience
-          </h2>
-          <div className="flex flex-col gap-24">
-            <div className="flex items-center justify-between relative gap-14 lg:gap-0">
-              <div>
-                <img src={publicBuilding} alt="publicBuilding" />
-              </div>
-              <div className="flex-grow max-w-[760px] ms-auto">
-                <div className="flex flex-col gap-4">
-                  <h3 className="text-4xl font-semibold leading-[57px] max-w-[546px]">
-                    Get help when you are inside a public building
-                  </h3>
-                  <p className="text-xl text-[#5E5E5E] max-w-[457px]">
-                    Transform your building into interactive digital floor maps
-                    with effective search and guiding tools to help visitors
-                    find their way indoors
-                  </p>
-                </div>
-              </div>
+        <div className="relative">
+          <img
+            src={travelExpIllustration}
+            alt="travelExp-illustration"
+            className="absolute bottom-[7.5] -left-10 hidden lg:block"
+          />
+          <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-40 md:mb-[313px]">
+            <h2 className="font-semibold text-3xl lg:text-5xl lg:leading-[60.48px] relative">
+              Assistify can guide you in every way possible, regardless of your
+              travel experience
               <img
-                src={dotGrid}
-                alt="dotGrid"
-                className="absolute right-0 bottom-0 hidden lg:block"
+                src={travelExpHillustration}
+                alt="travelExp-hillustration"
+                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
               />
-            </div>
-            <div className="flex items-center justify-between relative gap-14 lg:gap-0">
-              <div className="flex-grow max-w-[760px]">
-                <div className="flex flex-col gap-4 lg:items-end">
-                  <h3 className="text-4xl font-semibold leading-[57px] max-w-[546px]">
-                    Talk to your companion anytime
-                  </h3>
-                  <p className="text-xl text-[#5E5E5E] max-w-[457px]">
-                    Your companion is at your pocket, get help instantly and
-                    more accurately just tell you Assistify what to do and get
-                    AI response in more contextual manner to your trip or even
-                    switch to chat mode
-                  </p>
+            </h2>
+            <div className="flex flex-col gap-32 sm:gap-24">
+              <div className="flex flex-col sm:flex-row items-center justify-between relative gap-14 lg:gap-2">
+                <div>
+                  <img src={publicBuilding} alt="publicBuilding" />
                 </div>
-              </div>
-              <div>
+                <div className="flex-grow max-w-[760px] ms-auto">
+                  <div className="flex flex-col gap-4">
+                    <h3 className="text-4xl font-semibold leading-[57px] max-w-[546px]">
+                      Get help when you are inside a public building
+                    </h3>
+                    <p className="text-xl text-[#5E5E5E] max-w-[457px]">
+                      Transform your building into interactive digital floor
+                      maps with effective search and guiding tools to help
+                      visitors find their way indoors
+                    </p>
+                  </div>
+                </div>
                 <img
-                  src={companionAnytime}
-                  alt="companionAnytime"
-                  className="w-[228.52px]"
+                  src={dotGrid}
+                  alt="dotGrid"
+                  className="absolute right-0 bottom-0 hidden lg:block"
                 />
               </div>
-              <img
-                src={dotGrid}
-                alt="dotGrid"
-                className="absolute left-0 bottom-10 hidden lg:block"
-              />
-            </div>
-            <div className="flex items-center justify-between relative gap-14 lg:gap-0">
-              <div>
-                <img src={arLandmark} alt="publicBuilding" />
-              </div>
-              <div className="flex-grow max-w-[840px] ms-auto">
-                <div className="flex flex-col gap-4">
-                  <h3 className="text-4xl font-semibold leading-[57px] max-w-[634px]">
-                    Use AR to scan landmarks or objects and get real-time
-                    insights and information
-                  </h3>
-                  <p className="text-xl text-[#5E5E5E] max-w-[457px]">
-                    Identify places around you and also get AI generated quick
-                    information response about the landmark
-                  </p>
+              <div className="flex flex-col sm:flex-row items-center justify-between relative gap-14 lg:gap-2">
+                <div className="flex-grow max-w-[760px] order-2 sm:order-1">
+                  <div className="flex flex-col gap-4 lg:items-end">
+                    <h3 className="text-4xl font-semibold leading-[57px] max-w-[546px]">
+                      Talk to your companion anytime
+                    </h3>
+                    <p className="text-xl text-[#5E5E5E] max-w-[457px]">
+                      Your companion is at your pocket, get help instantly and
+                      more accurately just tell you Assistify what to do and get
+                      AI response in more contextual manner to your trip or even
+                      switch to chat mode
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <img
-                src={dotGrid}
-                alt="dotGrid"
-                className="absolute right-0 bottom-0 hidden lg:block"
-              />
-            </div>
-            <div className="flex items-center justify-between relative gap-14 lg:gap-0">
-              <div className="flex-grow max-w-[760px]">
-                <div className="flex flex-col gap-4 lg:items-end max-w-[634px]">
-                  <h3 className="text-4xl font-semibold leading-[57px] max-w-[457px] w-full">
-                    Safety is top priority
-                  </h3>
-                  <p className="text-xl text-[#5E5E5E] max-w-[457px]">
-                    Get quick access reaching to emergency numbers or common
-                    pubic services contact details and SOS feature to help you
-                    get instant help
-                  </p>
+                <div className="order-1 sm:order-2">
+                  <img
+                    src={companionAnytime}
+                    alt="companionAnytime"
+                    className="w-[228.52px]"
+                  />
                 </div>
-              </div>
-              <div>
                 <img
-                  src={safetyPhone}
-                  alt="companionAnytime"
-                  className="w-[228.52px]"
+                  src={dotGrid}
+                  alt="dotGrid"
+                  className="absolute left-0 bottom-10 hidden lg:block"
                 />
+              </div>
+              <div className="flex flex-col sm:flex-row items-center justify-between relative gap-14 lg:gap-2">
+                <div>
+                  <img src={arLandmark} alt="publicBuilding" />
+                </div>
+                <div className="flex-grow max-w-[840px] ms-auto">
+                  <div className="flex flex-col gap-4">
+                    <h3 className="text-4xl font-semibold leading-[57px] max-w-[550px] xl:max-w-[634px]">
+                      Use AR to scan landmarks or objects and get real-time
+                      insights and information
+                    </h3>
+                    <p className="text-xl text-[#5E5E5E] max-w-[457px]">
+                      Identify places around you and also get AI generated quick
+                      information response about the landmark
+                    </p>
+                  </div>
+                </div>
+                <img
+                  src={dotGrid}
+                  alt="dotGrid"
+                  className="absolute right-0 bottom-0 hidden lg:block"
+                />
+              </div>
+              <div className="flex flex-col sm:flex-row items-center justify-between relative gap-14 lg:gap-2">
+                <div className="flex-grow max-w-[760px] order-2 sm:order-1">
+                  <div className="flex flex-col gap-4 lg:items-end max-w-[634px]">
+                    <h3 className="text-4xl font-semibold leading-[57px] max-w-[457px] w-full">
+                      Safety is top priority
+                    </h3>
+                    <p className="text-xl text-[#5E5E5E] max-w-[457px]">
+                      Get quick access reaching to emergency numbers or common
+                      pubic services contact details and SOS feature to help you
+                      get instant help
+                    </p>
+                  </div>
+                </div>
+                <div className="order-1 sm:order-2">
+                  <img
+                    src={safetyPhone}
+                    alt="companionAnytime"
+                    className="w-[228.52px]"
+                  />
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-[313px]">
-          <h2 className="font-semibold text-5xl leading-[90px]">
+        <div className="flex flex-col gap-[54px] max-w-[1120px] mx-auto mb-40 md:mb-[313px]">
+          <h2 className="font-semibold text-3xl lg:text-5xl lg:leading-[90px]">
             Leverage tomorrows technologies today
           </h2>
-          <div className="grid grid-cols-1 gap-y-12 lg:gap-y-0 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-y-12 lg:gap-y-0 xs:grid-cols-2 lg:grid-cols-4">
             <div className="flex flex-col gap-3.5 items-center">
               <h5 className="text-xl leading-[37.48px] text-center">
                 Advance Tech AI/AR/BLE
@@ -439,7 +469,12 @@ export const Landing = () => {
                 <img src={materialSymbolsPoint} alt="materialSymbolsPoint" />
               </div>
             </div>
-            <div className="flex flex-col gap-3.5 items-center">
+            <div className="flex flex-col gap-3.5 items-center relative">
+              <img
+                src={leverageIllustration}
+                className="absolute -z-10 top-[56.1%] right-[30px]"
+                alt="leverageIllustration"
+              />
               <h5 className="text-xl leading-[37.48px] text-center">
                 Feature complete & guided.
               </h5>
@@ -451,17 +486,17 @@ export const Landing = () => {
         </div>
 
         <div className="max-w-[1120px] mx-auto bg-white py-7.5 px-5 border border-[#EDEDED] rounded-[20px]">
-          <div className="max-w-[747.19px] mx-auto grid grid-cols-1 md:grid-cols-12 items-center gap-[70px]">
+          <div className="max-w-[747.19px] mx-auto grid grid-cols-1 md:grid-cols-12 items-center lg:gap-[70px]">
             <div className="col-span-8">
               <div className="flex flex-col gap-4 max-w-[355px]">
-                <h3 className="text-5xl font-semibold leading-[90px]">
+                <h3 className="text-3xl lg:text-5xl font-semibold lg:leading-[90px]">
                   Get Assistify now
                 </h3>
                 <p className="text-xl text-[#6E6E6E]">
                   Get your questions answered, on your phone now.
                 </p>
               </div>
-              <div className="flex gap-[17px] items-center flex-wrap mt-16">
+              <div className="flex flex-col xs:flex-row gap-[17px] items-center flex-wrap mt-16">
                 <Link to="">
                   <img
                     src={googleplay}

@@ -22,6 +22,9 @@ body {
   font-size: 16px;
   background: #f8f8f8;
   line-height: 1.5;
+  background-image: url(../assets/img/landingBg.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 ::-webkit-scrollbar {
@@ -80,6 +83,7 @@ input:-webkit-autofill:active {
 button:focus-visible {
   outline: none;
 }
+
 .button-gradient-border {
   background-color: #fff;
   border: none;

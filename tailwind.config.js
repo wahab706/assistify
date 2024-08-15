@@ -4,7 +4,9 @@ export default {
   darkMode: true,
   theme: {
     extend: {
-      screens: {},
+      screens: {
+        xs: "480px",
+      },
       colors: {
         secondary: "#FBC75E",
         "gray-light": "#AAAAAA",
