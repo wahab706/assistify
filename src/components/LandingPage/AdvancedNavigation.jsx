@@ -1,7 +1,7 @@
 import React from "react";
 import leadsClientsIllust from "../../assets/img/leads-clients-illust.svg";
-import GroupMobile from "../../assets/img/GroupMobile.png";
-import smGroupMobile from "../../assets/img/smGroupMobile.png";
+import GroupMobile from "../../assets/img/GroupMobile.svg";
+import smGroupMobile from "../../assets/img/smGroupMobile.svg";
 
 export const AdvancedNavigation = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import phone from "../../assets/img/phone.png";
-import googleplay from "../../assets/img/googleplay.png";
-import appstore from "../../assets/img/appstore.png";
+import phone from "../../assets/img/phone.svg";
+import googleplay from "../../assets/img/googleplay.svg";
+import appstore from "../../assets/img/appstore.svg";
 
 export const GetAssistify = () => {
   return (

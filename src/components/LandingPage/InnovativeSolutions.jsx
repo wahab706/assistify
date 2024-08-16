@@ -1,8 +1,8 @@
 import React from "react";
-import streamlineManualBook from "../../assets/img/streamline_manual-book.png";
-import materialSymbolsPoint from "../../assets/img/material-symbols_point-scan.png";
-import mynaui from "../../assets/img/mynaui_ar.png";
-import aiBrain from "../../assets/img/hugeicons_ai-brain.png";
+import streamlineManualBook from "../../assets/img/streamline_manual-book.svg";
+import materialSymbolsPoint from "../../assets/img/material-symbols_point-scan.svg";
+import mynaui from "../../assets/img/mynaui_ar.svg";
+import aiBrain from "../../assets/img/hugeicons_ai-brain.svg";
 import leverageIllustration from "../../assets/img/leverage-illustration.svg";
 
 export const InnovativeSolutions = () => {

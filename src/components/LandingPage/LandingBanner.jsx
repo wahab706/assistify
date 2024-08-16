@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "../../components";
-import bannerIllustration from "../../assets/img/banner-illustration.png";
-import bannerImg from "../../assets/img/bannerImg.png";
-import googleplay from "../../assets/img/googleplay.png";
-import appstore from "../../assets/img/appstore.png";
+import bannerIllustration from "../../assets/img/banner-illustration.svg";
+import bannerImg from "../../assets/img/bannerImg.svg";
+import googleplay from "../../assets/img/googleplay.svg";
+import appstore from "../../assets/img/appstore.svg";
 
 export function LandingBanner() {
   return (

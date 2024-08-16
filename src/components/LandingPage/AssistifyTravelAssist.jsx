@@ -1,9 +1,9 @@
 import React from "react";
-import publicBuilding from "../../assets/img/publicBuilding.png";
-import companionAnytime from "../../assets/img/companionAnytime.png";
-import arLandmark from "../../assets/img/arLandmark.png";
+import publicBuilding from "../../assets/img/publicBuilding.svg";
+import companionAnytime from "../../assets/img/companionAnytime.svg";
+import arLandmark from "../../assets/img/arLandmark.svg";
 import dotGrid from "../../assets/img/dotGrid.svg";
-import safetyPhone from "../../assets/img/safetyPhone.png";
+import safetyPhone from "../../assets/img/safetyPhone.svg";
 import travelExpHillustration from "../../assets/img/travelExp-hillustration.svg";
 import travelExpIllustration from "../../assets/img/travelExp-illustration.svg";
 
